@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+i {
+	margin-right: 10px;
+}
+/*----------bootstrap-navbar-css------------*/
+.navbar-logo{
+	padding: 15px;
+	color: #FFF;
+	transition: all .5s ease-in-out;
+}
+
+.navbar-logo:hover{
+	color: #DDD !important;
+}
+.navbar-mainbg{
+	background-color: #5161ce !important;
+	padding: 0px;
+}
+
+#navbarSupportedContent ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 20px 20px;
+    transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+
+.fa{
+	transition: transform .6s ease-in-out;
+}
+.fa:hover{
+	transform: rotate(360deg);
+}
+
+.card{
+	box-shadow: 12px 12px 14px 0 #888;
+	border-radius: 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: all .4s ease-in-out;
+}
+
+.card:hover{
+	box-shadow: 0 0 2px 0 #888;
+	border-radius: 5px;
+}
+
+#c1{
+	background-color: #9CF6F6;
+}
+#c2{
+	background-color: #F7F06D;
+}
+#c3{
+	background-color: #FEEFDD;
+}
+#c4{
+	background-color: #D4AFCD;
+}
+#c5{
+	background-color: #FF8200;
+}
+#c6{
+	background-color: #06D6A0;
+}
+
+.footer a{
+	color: rgb(247, 198, 139);
+}
+
+.footer a:hover{
+	color: rgb(189, 155, 115);
+}
+
+
+#loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	background-color: black;
+	background-color: #F5F5F5;
+}
+.clock-loader {
+	--clock-color: #5161CE;
+	--clock-width: 10rem;
+	--clock-radius: calc(var(--clock-width) / 2);
+	--clock-minute-length: calc(var(--clock-width) * 0.4);
+	--clock-hour-length: calc(var(--clock-width) * 0.2);
+	--clock-thickness: 0.5rem;
+
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: var(--clock-width);
+	height: var(--clock-width);
+	border: 3px solid var(--clock-color);
+	border-radius: 50%;
+}
+.clock-loader::before,
+.clock-loader::after {
+	position: absolute;
+	content: "";
+	top: calc(var(--clock-radius) * 0.25);
+	width: var(--clock-thickness);
+	background: var(--clock-color);
+	border-radius: 10px;
+	transform-origin: center calc(100% - calc(var(--clock-thickness) / 2));
+	animation: spin infinite linear;
+}
+
+.clock-loader::before {
+	height: var(--clock-minute-length);
+	animation-duration: 2s;
+}
+
+.clock-loader::after {
+	top: calc(var(--clock-radius) * 0.25 + var(--clock-hour-length));
+	height: var(--clock-hour-length);
+	animation-duration: 15s;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(1turn);
+	}
+}

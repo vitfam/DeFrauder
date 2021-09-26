@@ -1,0 +1,141 @@
+body{
+    scroll-behavior: smooth;
+    position: relative;
+}
+.img-container{
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    height: 15vh;
+    position: sticky;
+    top: 0;
+}
+
+.img-container img{
+    height: 100px;
+    margin: 5px;
+    padding: 15px;
+}
+
+.main-heading h1, .main-heading h2, .main-heading p, .main-heading a{
+    color: #FFF;
+    text-align: center;
+}
+
+
+.main-heading{
+    color: #FFF;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-heading h1{
+    font-size: 150px;
+}
+
+.main-heading h2{
+    font-size: 40px;
+}
+.main-heading span{
+    color: #00BBF9;
+}
+
+.story-box p, .question-box .form-label{
+    text-align: justify;
+}
+
+.story-box{
+    height: 50%;
+}
+
+.quest{
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-box{
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.footer, .footer .foot-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 575.98px) {
+    .footer{
+        flex-direction: column;
+    }
+    .footer .foot-links{
+        margin-bottom: 20px;
+    }
+}
+
+
+/* LOADER STYLE */
+
+#loader {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+.clock-loader {
+    --clock-color: #00BBF9;
+    --clock-width: 10rem;
+    --clock-radius: calc(var(--clock-width) / 2);
+    --clock-minute-length: calc(var(--clock-width) * 0.4);
+    --clock-hour-length: calc(var(--clock-width) * 0.2);
+    --clock-thickness: 0.5rem;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--clock-width);
+    height: var(--clock-width);
+    border: 3px solid var(--clock-color);
+    border-radius: 50%;
+}
+.clock-loader::before,
+.clock-loader::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--clock-radius) * 0.25);
+    width: var(--clock-thickness);
+    background: var(--clock-color);
+    border-radius: 10px;
+    transform-origin: center calc(100% - calc(var(--clock-thickness) / 2));
+    animation: spin infinite linear;
+}
+
+.clock-loader::before {
+    height: var(--clock-minute-length);
+    animation-duration: 2s;
+}
+
+.clock-loader::after {
+    top: calc(var(--clock-radius) * 0.25 + var(--clock-hour-length));
+    height: var(--clock-hour-length);
+    animation-duration: 15s;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+}
+}
+  
