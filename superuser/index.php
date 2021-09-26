@@ -109,6 +109,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 transform: rotate(1turn);
             }
         }
+        @media (max-width: 575.98px) {
+            form{
+                width: 50vw;
+            }
+        }
     </style>
 
     <script src="https://kit.fontawesome.com/767a85f1ee.js" crossorigin="anonymous"></script>
