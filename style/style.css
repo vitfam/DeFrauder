@@ -11,6 +11,7 @@ body{
     height: 15vh;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .img-container img{
@@ -43,6 +44,10 @@ body{
 }
 .main-heading span{
     color: #00BBF9;
+}
+
+.main-heading .btn, .main-heading form, .main-heading h1, .main-heading h2{
+    z-index: 5;
 }
 
 .story-box p, .question-box .form-label{
@@ -136,6 +141,19 @@ body{
 @keyframes spin {
     to {
         transform: rotate(1turn);
-}
+    }
 }
   
+
+/* Particle JS */
+#particles-js{ 
+    position: absolute; 
+    /* bottom: 0; */
+    /* z-index: -1; */
+    width: 100vw; 
+    height: 100vh; 
+    background-color: transparent; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+}     
