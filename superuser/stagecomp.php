@@ -18,9 +18,9 @@
         $affect = mysqli_affected_rows($conn);
 
         if ($updateRes) {
-        if ($affect) {
-            echo '<script>alert("Answers updated");</script>';
-            echo "<script>setTimeout(\"location.href = './stagecomp.php';\",1);</script>";
+            if ($affect) {
+                echo '<script>alert("Answers updated");</script>';
+                echo "<script>setTimeout(\"location.href = './stagecomp.php';\",1);</script>";
             }
             else{
                 echo '<script>alert("Answers not updated");</script>';

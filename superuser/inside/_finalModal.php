@@ -11,7 +11,7 @@ if (mysqli_num_rows($editRes)) {
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="editStoryModalLabel">Edit the story</h5>
+                            <h5 class="modal-title" id="editStoryModalLabel">Edit Final Answers</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form action"' . $_SERVER['PHP_SELF'] . '" method="GET">

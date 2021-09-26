@@ -25,11 +25,11 @@
     <title>VITFAM | Clues</title>
 </head>
 
-<!-- <body onload="play<?php echo $_SESSION['clue_id']; ?>"> -->
 <body>
     <div id="loader">
       <div class="clock-loader"></div>
     </div>
+    
   <?php 
       require './partials/_header.php';
       
@@ -67,7 +67,7 @@
                 $num1 = mysqli_num_rows($res1);
                 if ($num1) {
                   while($row1 = mysqli_fetch_assoc($res1)){
-                    echo '<audio id="my_audio" src="./music/' . $row1['clue_number'] . '.mp3" loop="loop"></audio>';
+                    echo '<audio id="my_audio" src="./music/clue' . $row1['clue_number'] . '.mp3" loop="loop"></audio>';
                     $_SESSION['clue_id'] = $row1['clue_number'];
                     echo '
                       <div class="container story-box my-4">
@@ -127,7 +127,7 @@
                 $num1 = mysqli_num_rows($res1);
                 if ($num1) {
                   while($row1 = mysqli_fetch_assoc($res1)){
-                    echo '<audio id="my_audio" src="./music/' . $row1['clue_number'] . '.mp3" loop="loop"></audio>';
+                    echo '<audio id="my_audio" src="./music/clue' . $row1['clue_number'] . '.mp3" loop="loop"></audio>';
                     $_SESSION['clue_id'] = $row1['clue_number'];
                     echo '
                       <div class="container story-box my-4">
@@ -181,7 +181,7 @@
                 $num1 = mysqli_num_rows($res1);
                 if ($num1) {
                   while($row1 = mysqli_fetch_assoc($res1)){
-                    echo '<audio id="my_audio" src="./music/' . $row1['clue_number'] . '.mp3" loop="loop"></audio>';
+                    echo '<audio id="my_audio" src="./music/clue' . $row1['clue_number'] . '.mp3" loop="loop"></audio>';
                     $_SESSION['clue_id'] = $row1['clue_number'];
                     echo '
                       <div class="container story-box my-4">

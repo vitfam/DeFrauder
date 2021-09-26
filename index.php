@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
-    <title>VITFAM | Financial Fraud</title>
+    <title>VITFAM | SCAM 2021</title>
 </head>
 <!-- <body style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://floridapolitics.com/wp-content/uploads/2016/02/fraud-Large.jpg'); background-size: cover; background-repeat: no-repeat; overflow: hidden;"> -->
 <body style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://www.bluefin.com/wp-content/uploads/2020/10/fraudulent-credit-card-transactions.jpg'); background-size: cover; background-repeat: no-repeat; overflow: hidden;">

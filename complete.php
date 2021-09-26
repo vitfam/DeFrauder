@@ -21,6 +21,9 @@
     <div id="loader">
       <div class="clock-loader"></div>
     </div>
+    
+    <audio id="my_audio" src="./music/complete.mp3" loop="loop"></audio>
+
     <?php 
 
       include './partials/_dbconnect.php';

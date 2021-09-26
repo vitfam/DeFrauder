@@ -27,6 +27,8 @@
       <div class="clock-loader"></div>
     </div>
     
+    <audio id="my_audio" src="./music/question.mp3" loop="loop"></audio>
+
     <?php require './partials/_header.php'; 
     
     $sid = $_SESSION['story_id'];

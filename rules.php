@@ -17,6 +17,9 @@
     <div id="loader">
       <div class="clock-loader"></div>
     </div>
+
+    <audio id="my_audio" src="./music/rules.mp3" loop="loop"></audio>
+
     <?php  require './partials/_header.php'; ?>
 
     <div class="container my-5" style="height: 61vh;">
