@@ -12,10 +12,10 @@
 // Comment below code if you're using localhost
 
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-    $server = $cleardb_url["host"];
-    $username = $cleardb_url["user"];
-    $password = $cleardb_url["pass"];
-    $database = substr($cleardb_url["path"],1);
+    $server = $url["host"];
+    $username = $url["user"];
+    $password = $url["pass"];
+    $database = substr($url["path"],1);
     $active_group = 'default';
     $query_builder = TRUE;
     
