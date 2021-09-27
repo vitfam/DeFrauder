@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>VITFAM | Story</title>
   </head>
+  
   <body>
-    <div id="loader">
+  <div id="loader">
       <div class="clock-loader"></div>
     </div>
 
-    <audio id="my_audio" src="./music/story.mp3" loop="loop"></audio>
 
     <?php 
     
@@ -42,9 +42,9 @@
           $_SESSION['story_id'] = $row['story_id'];
           $_SESSION['clue_id'] = 1;
           echo '
-            <div class="container story-box my-4">
+            <div class="container story-box my-4" style="width:80%;">
               <h2 class="text-center my-4">' . $row['story_title'] . '</h2>
-              <p>' . $row['story_content'] . '</p>
+              <p style="line-height:30px;">' . $row['story_content'] . '</p>
               <form action="./clues.php" method="POST" class="d-flex justify-content-lg-end my-5">
                 <input class="btn btn-warning" type="submit" name="stage1" value="Proceed to Clues">
               </form>

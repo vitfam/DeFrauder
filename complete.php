@@ -17,12 +17,13 @@
     <link rel="stylesheet" href="./style/congo.css">
     <title>VITFAM | Thank You</title>
   </head>
+  
   <body>
     <div id="loader">
       <div class="clock-loader"></div>
     </div>
     
-    <audio id="my_audio" src="./music/complete.mp3" loop="loop"></audio>
+    <audio id="logout" src="./music/logout.mp3" loop="loop"></audio>
 
     <?php 
 
@@ -46,7 +47,7 @@
                   <div class="modal-bottom">
                       <a href="./index.php" role="button" class="modal-btn u-btn u-btn--share">Home</a>
                       <form action="./partials/_loggout.php" method="POST">
-                          <button type="submit" name="congo" class="modal-btn u-btn u-btn--danger">Logout</button>
+                          <button type="submit" name="congo" id="logoutbtn" class="modal-btn u-btn u-btn--danger">Logout</button>
                       </form>
                   </div>
                 </div>

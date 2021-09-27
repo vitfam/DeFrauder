@@ -1,8 +1,10 @@
+// For playing music
 window.onload = function() {
     document.getElementById("my_audio").play();
 }
 
 
+// For loader
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
         document.querySelector("body").style.visibility = "hidden";
@@ -14,8 +16,7 @@ document.onreadystatechange = function() {
 };
 
 
-// for particles js
-
+// For Particles JS
 particlesJS("particles-js", 
 { 
     "particles": 

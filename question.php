@@ -22,12 +22,12 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>VITFAM | Question Time</title>
   </head>
+  
   <body>
     <div id="loader">
       <div class="clock-loader"></div>
     </div>
-    
-    <audio id="my_audio" src="./music/question.mp3" loop="loop"></audio>
+  
 
     <?php require './partials/_header.php'; 
     
@@ -46,19 +46,18 @@
       while($quesRow = mysqli_fetch_assoc($quesRes)){
 
         echo '
-        <div class="container story-box my-4">
+        <div class="container story-box my-4" style="width:80%;">
             <h3 class="text-center">Question Round</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptates ipsum sunt et quibusdam voluptas dolore enim unde. Quod rem dolorem consectetur, fugit aliquam tempora ab sequi ipsa voluptatibus et, qui odit fuga harum, autem hic molestias placeat at veniam sapiente repellat quos cupiditate. Ipsa, quos eaque. Doloremque, pariatur ipsa accusantium placeat dolores error perspiciatis, aliquam cumque sequi ad harum enim? Fugiat commodi ut exercitationem repellendus!</p>
         </div>
 
-        <div class="container question-box my-5">
+        <div class="container question-box my-5" style="width:80%;">
           <h2>Stage ' . $_SESSION['ques_increment'] . '</h2>
           <form action="./partials/_quesValidate.php" method="POST">
           ';
           if (mysqli_num_rows($result)) {
             while($row = mysqli_fetch_assoc($result)){
               if($row['ques_increment'] == 3){
-                echo '<audio id="my_audio" src="./music/' . $row['ques_increment'] . '.mp3" loop="loop"></audio>';
                 echo '
                   <div class="my-4">
                     <label for="question3" class="form-label">' . $quesRow['stage3_question'] . '</label>
@@ -67,7 +66,6 @@
                 ';
               }
               else if($row['ques_increment'] == 2){
-                echo '<audio id="my_audio" src="./music/' . $row['ques_increment'] . '.mp3" loop="loop"></audio>';
                 echo '
                   <div class="my-4">
                     <label for="question2" class="form-label">' . $quesRow['stage2_question'] . '</label>
@@ -76,7 +74,6 @@
                 ';
               }
               else if($row['ques_increment'] == 1){
-                echo '<audio id="my_audio" src="./music/' . $row['ques_increment'] . '.mp3" loop="loop"></audio>';
                 echo '
                   <div class="my-4">
                     <label for="question1" class="form-label">' . $quesRow['stage1_question'] . '</label>
@@ -97,7 +94,7 @@
       }
     }
     ?>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
   </body>

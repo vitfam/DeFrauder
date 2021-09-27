@@ -19,12 +19,11 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>VITFAM | Conclusion</title>
   </head>
+  
   <body>
     <div id="loader">
       <div class="clock-loader"></div>
     </div>
-
-    <audio id="my_audio" src="./music/final.mp3" loop="loop"></audio>
 
     <?php require './partials/_header.php'; 
     

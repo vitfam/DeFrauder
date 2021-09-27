@@ -20,12 +20,11 @@
     <link rel="stylesheet" href="./style/congo.css">
     <title>VITFAM | Congratulations</title>
   </head>
+  
   <body>
     <div id="loader">
       <div class="clock-loader"></div>
     </div>
-    
-    <audio id="my_audio" src="./music/congratulations.mp3" loop="loop"></audio>
 
   <div class="wrapper">
     <div class="modal modal--congratulations">

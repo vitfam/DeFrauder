@@ -15,11 +15,12 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>VITFAM | SCAM 2021</title>
 </head>
-<!-- <body style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://floridapolitics.com/wp-content/uploads/2016/02/fraud-Large.jpg'); background-size: cover; background-repeat: no-repeat; overflow: hidden;"> -->
-<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://www.bluefin.com/wp-content/uploads/2020/10/fraudulent-credit-card-transactions.jpg'); background-size: cover; background-repeat: no-repeat; overflow: hidden;">
+
+<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://www.bluefin.com/wp-content/uploads/2020/10/fraudulent-credit-card-transactions.jpg'); overflow: hidden;">
     <div id="loader">
         <div class="clock-loader"></div>
     </div>
+    
     <audio id="my_audio" src="./music/index.mp3" loop="loop"></audio>
 
     <?php require './partials/_header.php'; ?>
@@ -28,8 +29,14 @@
       
     <!-- Add particles js -->
       <div id="particles-js"></div>  
-    
-        <h1>SCAM 2021</h1>
+
+        <div class="patterns">
+          <svg width="100%" height="50%">
+            <text x="50%" y="50%"  text-anchor="middle">SCAM 2021</text>
+          </svg>
+        </div>
+
+        
         <?php 
                 include './partials/_dbconnect.php';
                 

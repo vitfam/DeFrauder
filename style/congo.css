@@ -20,11 +20,11 @@
     }
 .u-btn.u-btn--success {
     background: var(--btn-color--success);
-    box-shadow: 0 15px 40px 0 var(--btn-shadow--success);
+    box-shadow: 0 5px 40px 0 var(--btn-shadow--success);
 }
 .u-btn.u-btn--danger {
     background: var(--btn-color--danger);
-    box-shadow: 0 15px 40px 0 var(--btn-shadow--danger);
+    box-shadow: 0 5px 40px 0 var(--btn-shadow--danger);
 }
 
 /* Global 
@@ -63,7 +63,8 @@ span{
     overflow: hidden;
     border-radius: 10px;
     background: transparent;
-    box-shadow: 0 60px 80px 0 rgba(0, 0, 0, 0.4);
+    border: 2px solid #555;
+    /* box-shadow: 0 60px 80px 0 rgba(85, 85, 85, .4); */
 }
 .modal-top {
     padding: 30px 30px 20px;
@@ -144,7 +145,7 @@ span{
     font-size: 15px;
     letter-spacing: 1px;
     transition: all 0.2s ease;
-    box-shadow: 0 15px 40px 0 #FFF;
+    /* box-shadow: 0 15px 40px 0 #555; */
     cursor: pointer;
 }
 
