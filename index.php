@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
-    <title>VITFAM | SCAM 2021</title>
+    <title>VITFAM | DeFRAUDER</title>
 </head>
 
 <body style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://www.bluefin.com/wp-content/uploads/2020/10/fraudulent-credit-card-transactions.jpg'); overflow: hidden;">
@@ -32,7 +32,7 @@
 
         <div class="patterns">
           <svg width="100%" height="50%">
-            <text x="50%" y="50%"  text-anchor="middle">SCAM 2021</text>
+            <text x="50%" y="50%"  text-anchor="middle">DeFRAUDER</text>
           </svg>
         </div>
 
