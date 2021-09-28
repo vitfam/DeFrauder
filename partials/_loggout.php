@@ -26,16 +26,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     header("location: ./_logout.php");
                 } else {
                     echo '<script>alert("Experiencing Issue ' . mysqli_error($conn) . '");</script>';
-                    echo "<script>setTimeout(\"location.href = './index.php';\",1);</script>";
+                    echo "<script>setTimeout(\"location.href = '../index.php';\",1);</script>";
                 }
             } else{
                 echo '<script>alert("Already Logout");</script>';
-                echo "<script>setTimeout(\"location.href = './index.php';\",1);</script>";
+                echo "<script>setTimeout(\"location.href = '../index.php';\",1);</script>";
             }
         }
     } else{
         echo '<script>alert("Mail not Found");</script>';
-        echo "<script>setTimeout(\"location.href = './index.php';\",1);</script>";
+        echo "<script>setTimeout(\"location.href = '../index.php';\",1);</script>";
     }
 }
 

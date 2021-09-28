@@ -62,7 +62,7 @@ svg text {
     font-family: Lora;
     letter-spacing: 10px;
     stroke: #00BBF9;
-    font-size: 200px;
+    font-size: 150px;
     font-weight: 700;
     stroke-width: 3;
     animation: textAnimate 5s infinite alternate;
