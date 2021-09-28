@@ -1,6 +1,6 @@
 <!-- Footer of the website use in many places -->
 
-<div class="container-fluid footer d-flex text-dark py-2 sticky-bottom mt-5" style="background-color: #DDD">
+<div class="container-fluid footer d-flex bg-light text-dark py-2 sticky-bottom mt-5">
     <p class="text-center mb-0 py-4">Copyright © <script>document.write(new Date().getFullYear())</script> All Rights reserved by <a href="./index.php" style="text-decoration:none;">VITFAM</a></p>
     <div class="foot-links d-flex">
         <a href="./index.php" class="btn btn-outline-dark mx-1">Home</a>

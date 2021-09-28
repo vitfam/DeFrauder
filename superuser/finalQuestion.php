@@ -7,11 +7,26 @@
     if (isset($_GET['edit'])) {
         
         $sno = $_GET['id'];
-        $content = $_GET['content'];
+        $content = mysqli_real_escape_string($conn, $_GET['content']);
         $final1 = $_GET['final1'];
         $final2 = $_GET['final2'];
         $final3 = $_GET['final3'];
         $story = $_GET['story'];
+
+        $final1 = str_replace("<", "&lt;", $final1);
+        $final1 = str_replace(">", "&gt;", $final1);
+        $final1 = str_replace("'", "&apos;", $final1);
+        $final1 = str_replace('"', '&quot;', $final1);
+        
+        $final2 = str_replace("<", "&lt;", $final2);
+        $final2 = str_replace(">", "&gt;", $final2);
+        $final2 = str_replace("'", "&apos;", $final2);
+        $final2 = str_replace('"', '&quot;', $final2);
+        
+        $final3 = str_replace("<", "&lt;", $final3);
+        $final3 = str_replace(">", "&gt;", $final3);
+        $final3 = str_replace("'", "&apos;", $final3);
+        $final3 = str_replace('"', '&quot;', $final3);
 
         $update = "UPDATE final SET final_content = '$content', final_question1 = '$final1', final_question2 = '$final2', final_question3 = '$final3', final_story_id = '$story' WHERE final_id = '$sno'";
 
@@ -52,10 +67,10 @@
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-        $content = $_POST['content'];
-        $final1 = $_POST['final1'];
-        $final2 = $_POST['final2'];
-        $final3 = $_POST['final3'];
+        $content = mysqli_real_escape_string($conn, $_POST['content']);
+        $final1 = mysqli_real_escape_string($conn, $_POST['final1']);
+        $final2 = mysqli_real_escape_string($conn, $_POST['final2']);
+        $final3 = mysqli_real_escape_string($conn, $_POST['final3']);
         $story = $_POST['story'];
 
         $sql = "INSERT INTO final(final_content, final_question1, final_question2, final_question3, final_story_id)

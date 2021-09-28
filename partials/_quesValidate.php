@@ -14,8 +14,8 @@
         $answer = $_POST['answer3'];
         $answer = str_replace("<", "&lt;", $answer);
         $answer = str_replace(">", "&gt;", $answer);
-        $answer = str_replace("'", "\'", $answer);
-        $answer = str_replace('"', '\"', $answer);
+        $answer = str_replace("'", "&apos;", $answer);
+        $answer = str_replace('"', '&quot;', $answer);
 
 
         $sqlquery = "SELECT * FROM user_ques WHERE user_id = '$uid' AND question_id = '$sid'";
@@ -41,8 +41,8 @@
         $answer = $_POST['answer2'];
         $answer = str_replace("<", "&lt;", $answer);
         $answer = str_replace(">", "&gt;", $answer);
-        $answer = str_replace("'", "\'", $answer);
-        $answer = str_replace('"', '\"', $answer);
+        $answer = str_replace("'", "&apos;", $answer);
+        $answer = str_replace('"', '&quot;', $answer);
 
         $sqlquery = "SELECT * FROM user_ques WHERE user_id = '$uid' AND question_id = '$sid'";
         $result = mysqli_query($conn, $sqlquery); 
@@ -69,8 +69,8 @@
         $answer = $_POST['answer1'];
         $answer = str_replace("<", "&lt;", $answer);
         $answer = str_replace(">", "&gt;", $answer);
-        $answer = str_replace("'", "\'", $answer);
-        $answer = str_replace('"', '\"', $answer);
+        $answer = str_replace("'", "&apos;", $answer);
+        $answer = str_replace('"', '&quot;', $answer);
 
         $sqlquery = "SELECT * FROM user_ques WHERE user_id = '$uid' AND question_id = '$sid'";
         $result = mysqli_query($conn, $sqlquery); 

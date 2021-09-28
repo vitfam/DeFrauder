@@ -4,6 +4,7 @@
     
     include '../partials/_dbconnect.php'; 
 
+    
     if (isset($_GET['edit'])) {
         
         $sno = $_GET['id'];
@@ -12,6 +13,17 @@
         $password = $_GET['password'];
         $story = $_GET['story'];
         $login = $_GET['login'];
+
+        $password = str_replace("<", "&lt;", $password);
+        $password = str_replace(">", "&gt;", $password);
+        $password = str_replace("'", "&apos;", $password);
+        $password = str_replace('"', '&quot;', $password);
+        
+        $username = str_replace("<", "&lt;", $username);
+        $username = str_replace(">", "&gt;", $username);
+        $username = str_replace("'", "&apos;", $username);
+        $username = str_replace('"', '&quot;', $username);
+
 
         $update = "UPDATE users SET username = '$username', user_email = '$email', password = '$password', story_id = '$story', user_login_check = '$login' WHERE user_id = '$sno'";
 
@@ -56,6 +68,17 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
         $story = $_POST['story'];
+
+        $password = str_replace("<", "&lt;", $password);
+        $password = str_replace(">", "&gt;", $password);
+        $password = str_replace("'", "&apos;", $password);
+        $password = str_replace('"', '&quot;', $password);
+        
+        $username = str_replace("<", "&lt;", $username);
+        $username = str_replace(">", "&gt;", $username);
+        $username = str_replace("'", "&apos;", $username);
+        $username = str_replace('"', '&quot;', $username);
+
 
         $exist = "SELECT * FROM users WHERE user_email = '$email'";
         $res = mysqli_query($conn, $exist); 

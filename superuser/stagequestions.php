@@ -13,6 +13,22 @@
         $stage3 = $_GET['stage3'];
         $story = $_GET['story'];
 
+        $stage1 = str_replace("<", "&lt;", $stage1);
+        $stage1 = str_replace(">", "&gt;", $stage1);
+        $stage1 = str_replace("'", "&apos;", $stage1);
+        $stage1 = str_replace('"', '&quot;', $stage1);
+        
+        $stage2 = str_replace("<", "&lt;", $stage2);
+        $stage2 = str_replace(">", "&gt;", $stage2);
+        $stage2 = str_replace("'", "&apos;", $stage2);
+        $stage2 = str_replace('"', '&quot;', $stage2);
+        
+        $stage3 = str_replace("<", "&lt;", $stage3);
+        $stage3 = str_replace(">", "&gt;", $stage3);
+        $stage3 = str_replace("'", "&apos;", $stage3);
+        $stage3 = str_replace('"', '&quot;', $stage3);
+        
+
         $update = "UPDATE question SET question_content = '$content', stage1_question = '$stage1', stage2_question = '$stage2', stage3_question = '$stage3', question_story_id = '$story' WHERE question_id = '$sno'";
 
         $updateRes = mysqli_query($conn, $update);
@@ -57,6 +73,21 @@
         $stage2 = $_POST['stage2'];
         $stage3 = $_POST['stage3'];
         $story = $_POST['story'];
+
+        $stage1 = str_replace("<", "&lt;", $stage1);
+        $stage1 = str_replace(">", "&gt;", $stage1);
+        $stage1 = str_replace("'", "&apos;", $stage1);
+        $stage1 = str_replace('"', '&quot;', $stage1);
+        
+        $stage2 = str_replace("<", "&lt;", $stage2);
+        $stage2 = str_replace(">", "&gt;", $stage2);
+        $stage2 = str_replace("'", "&apos;", $stage2);
+        $stage2 = str_replace('"', '&quot;', $stage2);
+        
+        $stage3 = str_replace("<", "&lt;", $stage3);
+        $stage3 = str_replace(">", "&gt;", $stage3);
+        $stage3 = str_replace("'", "&apos;", $stage3);
+        $stage3 = str_replace('"', '&quot;', $stage3);
 
         $sql = "INSERT INTO question(question_content, stage1_question, stage2_question, stage3_question, question_story_id)
                 VALUES('$content', '$stage1', '$stage2', '$stage3', '$story')";

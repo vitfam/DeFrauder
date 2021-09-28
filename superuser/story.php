@@ -10,6 +10,16 @@
         $title = $_GET['title'];
         $content = $_GET['content'];
 
+        $title = str_replace("<", "&lt;", $title);
+        $title = str_replace(">", "&gt;", $title);
+        $title = str_replace("'", "&apos;", $title);
+        $title = str_replace('"', '&quot;', $title);
+        
+        $content = str_replace("<", "&lt;", $content);
+        $content = str_replace(">", "&gt;", $content);
+        $content = str_replace("'", "&apos;", $content);
+        $content = str_replace('"', '&quot;', $content);
+
         $update = "UPDATE story SET story_title = '$title', story_content = '$content' WHERE story_id = '$sno'";
 
         $updateRes = mysqli_query($conn, $update);
@@ -51,6 +61,16 @@
 
         $title = $_POST['title'];
         $content = $_POST['content'];
+
+        $title = str_replace("<", "&lt;", $title);
+        $title = str_replace(">", "&gt;", $title);
+        $title = str_replace("'", "&apos;", $title);
+        $title = str_replace('"', '&quot;', $title);
+        
+        $content = str_replace("<", "&lt;", $content);
+        $content = str_replace(">", "&gt;", $content);
+        $content = str_replace("'", "&apos;", $content);
+        $content = str_replace('"', '&quot;', $content);
 
         $sql = "INSERT INTO story(story_title, story_content)
                 VALUES('$title', '$content')";

@@ -12,6 +12,16 @@
         $content = $_GET['content'];
         $story = $_GET['story'];
 
+        $title = str_replace("<", "&lt;", $title);
+        $title = str_replace(">", "&gt;", $title);
+        $title = str_replace("'", "&apos;", $title);
+        $title = str_replace('"', '&quot;', $title);
+        
+        $content = str_replace("<", "&lt;", $content);
+        $content = str_replace(">", "&gt;", $content);
+        $content = str_replace("'", "&apos;", $content);
+        $content = str_replace('"', '&quot;', $content);
+        
         $update = "UPDATE clue SET clue_number = '$clue', clue_title = '$title', clue_content = '$content', clue_story_id = '$story' WHERE clue_id = '$sno'";
 
         $updateRes = mysqli_query($conn, $update);
@@ -55,6 +65,16 @@
         $title = $_POST['title'];
         $content = $_POST['content'];
         $story = $_POST['story'];
+
+        $title = str_replace("<", "&lt;", $title);
+        $title = str_replace(">", "&gt;", $title);
+        $title = str_replace("'", "&apos;", $title);
+        $title = str_replace('"', '&quot;', $title);
+        
+        $content = str_replace("<", "&lt;", $content);
+        $content = str_replace(">", "&gt;", $content);
+        $content = str_replace("'", "&apos;", $content);
+        $content = str_replace('"', '&quot;', $content);
 
         $sql = "INSERT INTO clue(clue_title, clue_content, clue_number, clue_story_id)
                 VALUES('$title', '$content', '$clue', '$story')";
