@@ -132,11 +132,6 @@ svg text {
     box-shadow: 0 0 10px var(--box-shadow);
 }
 
-textarea.form-control, textarea.form-control:focus{
-    background: transparent;
-    color: #FFF;
-  }
-
 /* Footer content */
 
 .footer, .footer .foot-links{
