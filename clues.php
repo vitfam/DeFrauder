@@ -88,8 +88,8 @@
                     echo '
                       <div class="container story-box my-4">
                         <h3 class="text-center my-5">Clue ' . $row1['clue_number'] . '</h3>
+                        <p>' . $row1['clue_title'] . '</p>
                         <p><a href="' . $row1['clue_content'] . '" target="_blank">Click here to Access the Clue</a></p>
-                        <p>The link is about finding ' . $row1['clue_title'] . '</p>
                       </div>
                       <div class="quest container d-flex justify-content-lg-between mt-5 pt-5">
                       ';
@@ -146,8 +146,8 @@
                     echo '
                       <div class="container story-box my-4">
                         <h3 class="text-center my-5">Clue ' . $row1['clue_number'] . '</h3>
+                        <p>' . $row1['clue_title'] . '</p>
                         <p><a href="' . $row1['clue_content'] . '" target="_blank">Click here to Access the Clue</a></p>
-                        <p>The link is about finding ' . $row1['clue_title'] . '</p>
                       </div>
                       <div class="quest container d-flex justify-content-lg-between mt-5 pt-5">
                       ';
@@ -198,8 +198,8 @@
                     echo '
                       <div class="container story-box my-4">
                         <h3 class="text-center my-5">Clue ' . $row1['clue_number'] . '</h3>
+                        <p>' . $row1['clue_title'] . '</p>
                         <p><a href="' . $row1['clue_content'] . '" target="_blank">Click here to Access the Clue</a></p>
-                        <p>The link is about finding ' . $row1['clue_title'] . '</p>
                       </div>
                       <div class="quest container d-flex justify-content-lg-between mt-5 pt-5">
                       ';

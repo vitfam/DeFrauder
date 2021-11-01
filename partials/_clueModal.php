@@ -16,8 +16,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        <p style="text-align:justify;">' . $row1['clue_title'] . '</p>
                         <p style="text-align:justify;"><a href="' . $row1['clue_content'] . '" target="_blank">Click here to Access the Clue</a></p>
-                        <p style="text-align:justify;">The link is about finding ' . $row1['clue_title'] . '</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

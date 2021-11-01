@@ -75,7 +75,19 @@
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
 
+    <script>
+      window.onload = async () => {
+        try{
+          await document.getElementById("my_audio").play();
+        }
+        catch(err){
+          // console.log(err); // console cleared
+        }
+      }
+    </script>
+
     <script src="./js/main.js"></script>
+    <script src="./js/particle.js"></script>
 </body>
 
 </html>

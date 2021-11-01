@@ -23,7 +23,6 @@
       <div class="clock-loader"></div>
     </div>
     
-    <audio id="logout" src="./music/logout.mp3" loop="loop"></audio>
 
     <?php 
 
