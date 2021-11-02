@@ -40,7 +40,7 @@
               echo '
                 <a href="./index.php" role="button" class="modal-btn u-btn u-btn--share">Home</a>
                 <form action="./clues.php" method="POST">
-                  <button type="submit" name="congo" class="modal-btn u-btn u-btn--success">Final Step</button>
+                  <button type="submit" name="congo" class="modal-btn u-btn u-btn--success">Final Round</button>
                 </form>
               ';
             }

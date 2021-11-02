@@ -53,12 +53,12 @@
 
         echo '
         <div class="container story-box my-4" style="width:80%;">
-            <h3 class="text-center">Question Round</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptates ipsum sunt et quibusdam voluptas dolore enim unde. Quod rem dolorem consectetur, fugit aliquam tempora ab sequi ipsa voluptatibus et, qui odit fuga harum, autem hic molestias placeat at veniam sapiente repellat quos cupiditate. Ipsa, quos eaque. Doloremque, pariatur ipsa accusantium placeat dolores error perspiciatis, aliquam cumque sequi ad harum enim? Fugiat commodi ut exercitationem repellendus!</p>
+            <h2 class="text-center text-uppercase">Bonus Question</h2>
+            
         </div>
 
         <div class="container question-box my-5" style="width:80%;">
-          <h2>Stage ' . $_SESSION['ques_increment'] . '</h2>
+          <h3>Question ' . $_SESSION['ques_increment'] . '</h3>
           <form action="./partials/_quesValidate.php" method="POST">
           ';
           if (mysqli_num_rows($result)) {
@@ -66,7 +66,7 @@
               if($row['ques_increment'] == 3){
                 echo '
                   <div class="my-4">
-                    <label for="question3" class="form-label">' . $quesRow['stage3_question'] . '</label>
+                    <label for="question3" class="form-label mb-3">' . $quesRow['stage3_question'] . '</label>
                     <textarea class="form-control" id="question3" name="answer3" rows="6"></textarea>
                   </div>
                 ';
@@ -74,7 +74,7 @@
               else if($row['ques_increment'] == 2){
                 echo '
                   <div class="my-4">
-                    <label for="question2" class="form-label">' . $quesRow['stage2_question'] . '</label>
+                    <label for="question2" class="form-label mb-3">' . $quesRow['stage2_question'] . '</label>
                     <textarea class="form-control" id="question2" name="answer2" rows="6"></textarea>
                   </div>
                 ';
@@ -82,7 +82,7 @@
               else if($row['ques_increment'] == 1){
                 echo '
                   <div class="my-4">
-                    <label for="question1" class="form-label">' . $quesRow['stage1_question'] . '</label>
+                    <label for="question1" class="form-label mb-3">' . $quesRow['stage1_question'] . '</label>
                     <textarea class="form-control" id="question1" name="answer1" rows="6"></textarea>
                   </div>
                 ';

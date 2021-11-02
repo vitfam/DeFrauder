@@ -16,27 +16,30 @@
     <title>VITFAM | DeFRAUDER</title>
 </head>
 
-<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://www.bluefin.com/wp-content/uploads/2020/10/fraudulent-credit-card-transactions.jpg'); overflow: hidden;">
+<!-- <body style="background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url('https://www.bluefin.com/wp-content/uploads/2020/10/fraudulent-credit-card-transactions.jpg'); overflow: hidden;"> -->
+
+<body
+    style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://wallpaperaccess.com/full/1104840.jpg'); overflow: hidden;">
     <div id="loader">
         <div class="clock-loader"></div>
     </div>
-    
+
     <audio id="my_audio" src="./music/index.mp3" loop="loop"></audio>
 
     <?php require './partials/_header.php'; ?>
 
     <div class="container main-heading">
-      
-    <!-- Add particles js -->
-      <div id="particles-js"></div>  
+
+        <!-- Add particles js -->
+        <div id="particles-js"></div>
 
         <div class="patterns">
-          <svg width="100%" height="50%">
-            <text x="50%" y="50%"  text-anchor="middle">DeFRAUDER</text>
-          </svg>
+            <svg width="100%" height="100%">
+                <text x="50%" y="50%" text-anchor="middle">DeFRAUDER</text>
+            </svg>
         </div>
 
-        
+        <div class="inner-data">
         <?php 
                 include './partials/_dbconnect.php';
                 
@@ -65,10 +68,11 @@
                 }  
 
               ?>
+              </div>
     </div>
 
     <?php include './partials/_loginModal.php'; ?>
-    
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
@@ -76,14 +80,13 @@
     </script>
 
     <script>
-      window.onload = async () => {
-        try{
-          await document.getElementById("my_audio").play();
+    window.onload = async () => {
+        try {
+            await document.getElementById("my_audio").play();
+        } catch (err) {
+            // console.log(err); // console cleared
         }
-        catch(err){
-          // console.log(err); // console cleared
-        }
-      }
+    }
     </script>
 
     <script src="./js/main.js"></script>
