@@ -12,18 +12,12 @@
         $ans3 = $_GET['ans3'];
         $ans = $_GET['answer_given'];
 
-        $ans1 = str_replace("<", "&lt;", $ans1);
-        $ans1 = str_replace(">", "&gt;", $ans1);
         $ans1 = str_replace("'", "&apos;", $ans1);
         $ans1 = str_replace('"', '&quot;', $ans1);
-        
-        $ans2 = str_replace("<", "&lt;", $ans2);
-        $ans2 = str_replace(">", "&gt;", $ans2);
+
         $ans2 = str_replace("'", "&apos;", $ans2);
         $ans2 = str_replace('"', '&quot;', $ans2);
         
-        $ans3 = str_replace("<", "&lt;", $ans3);
-        $ans3 = str_replace(">", "&gt;", $ans3);
         $ans3 = str_replace("'", "&apos;", $ans3);
         $ans3 = str_replace('"', '&quot;', $ans3);
 

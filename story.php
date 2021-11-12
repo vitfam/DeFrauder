@@ -14,6 +14,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./images/VITFAM.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
@@ -42,8 +47,8 @@
           $_SESSION['story_id'] = $row['story_id'];
           $_SESSION['clue_id'] = 1;
           echo '
-            <div class="container story-box my-4" style="width:80%;">
-              <h2 class="text-center my-4">' . $row['story_title'] . '</h2>
+            <div class="container story-box my-5" style="width:80%;">
+              <h1 class="text-center my-4" style="font-family: \'Cinzel Decorative\', cursive;">' . $row['story_title'] . '</h1>
               <p style="line-height:30px;">' . $row['story_content'] . '</p>
               <form action="./clues.php" method="POST" class="d-flex justify-content-lg-end my-5">
                 <input class="btn btn-warning" type="submit" name="stage1" value="Proceed to Clues">

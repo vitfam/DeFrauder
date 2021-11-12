@@ -38,6 +38,9 @@
       .container a:hover{
         color: rgba(0, 187, 249, .5) !important;
       }
+      a{
+        text-decoration: none;
+      }
     </style>
 </head>
 
@@ -87,7 +90,7 @@
                     $_SESSION['clue_id'] = $row1['clue_number'];
                     echo '
                       <div class="container story-box my-4">
-                        <h3 class="text-center my-5">Clue ' . $row1['clue_number'] . '</h3>
+                        <h3 class="text-center my-5" style="font-size: 40px;">Clue ' . $row1['clue_number'] . '</h3>
                         <p>' . $row1['clue_title'] . '</p>
                         <p><a href="' . $row1['clue_content'] . '" target="_blank">Click here to Access the Clue</a></p>
                       </div>
@@ -113,7 +116,7 @@
                           }else{
                             echo '
                               <form action="./question.php" method="POST">
-                                <input type="submit" class="btn btn-success my-2 mx-2" name="stage3" value="Question TIme"/>
+                                <input type="submit" class="btn btn-success my-2 mx-2" name="stage3" value="Bonus Question"/>
                               </form>
                             ';
                           }
@@ -145,7 +148,7 @@
                     $_SESSION['clue_id'] = $row1['clue_number'];
                     echo '
                       <div class="container story-box my-4">
-                        <h3 class="text-center my-5">Clue ' . $row1['clue_number'] . '</h3>
+                        <h3 class="text-center my-5" style="font-size: 40px;">Clue ' . $row1['clue_number'] . '</h3>
                         <p>' . $row1['clue_title'] . '</p>
                         <p><a href="' . $row1['clue_content'] . '" target="_blank">Click here to Access the Clue</a></p>
                       </div>
@@ -166,7 +169,7 @@
                         if($id == 10){
                           echo '
                           <form action="./question.php" method="POST">
-                            <input type="submit" class="btn btn-success my-2 mx-2" name="stage2" value="Question TIme"/>
+                            <input type="submit" class="btn btn-success my-2 mx-2" name="stage2" value="Bonus Question"/>
                           </form>
                           ';
                         } 
@@ -197,7 +200,7 @@
                     $_SESSION['clue_id'] = $row1['clue_number'];
                     echo '
                       <div class="container story-box my-4">
-                        <h3 class="text-center my-5">Clue ' . $row1['clue_number'] . '</h3>
+                        <h3 class="text-center my-5" style="font-size: 40px;">Clue ' . $row1['clue_number'] . '</h3>
                         <p>' . $row1['clue_title'] . '</p>
                         <p><a href="' . $row1['clue_content'] . '" target="_blank">Click here to Access the Clue</a></p>
                       </div>
@@ -218,7 +221,7 @@
                         if($id == 5){
                           echo '
                           <form action="./question.php" method="POST">
-                            <input type="submit" class="btn btn-success my-2 mx-2" name="stage1" value="Question TIme"/>
+                            <input type="submit" class="btn btn-success my-2 mx-2" name="stage1" value="Bonus Question"/>
                           </form>
                           ';
                         } 
@@ -320,7 +323,9 @@
           }
         }
       }
-        
+
+      echo '<button type="button" class="btn btn-list btn-sm py-1 px-2" data-bs-toggle="modal" data-bs-target="#storyModal">CHECK THE STORY</button>';
+      require './partials/_storyModal.php';
       echo '</div>';
         
     ?>

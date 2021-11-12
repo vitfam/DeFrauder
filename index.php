@@ -7,7 +7,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Motive, Movement and Opportunity, we've got it all here at VITFAM's DeFRAUDER. It is time to fish out the fraud in our suspenseful stories. With clues and hints lined up all along the way, just like a treasure hunt for lost treasures, the ball is in your court to figure out the mastermind schemer and their scheme in the exciting and fast-moving tales we've got lined up for you.">
     <link rel="shortcut icon" href="./images/VITFAM.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,15 +22,13 @@
     <title>VITFAM | DeFRAUDER</title>
 </head>
 
-<!-- <body style="background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url('https://www.bluefin.com/wp-content/uploads/2020/10/fraudulent-credit-card-transactions.jpg'); overflow: hidden;"> -->
-
 <body
     style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://wallpaperaccess.com/full/1104840.jpg'); overflow: hidden;">
     <div id="loader">
         <div class="clock-loader"></div>
     </div>
 
-    <audio id="my_audio" src="./music/index.mp3" loop="loop"></audio>
+    <audio id="my_audio" src="./music/DeFrauder.mp3" loop="loop"></audio>
 
     <?php require './partials/_header.php'; ?>
 
@@ -40,12 +44,12 @@
         </div>
 
         <div class="inner-data">
-        <?php 
+            <?php 
                 include './partials/_dbconnect.php';
                 
                 if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
                     echo '
-                      <h2>Welcome <span>' . $_SESSION['username'] . '</span></h2>
+                      <h2 style="font-family: \'Cinzel Decorative\', cursive;">Welcome <span>' . $_SESSION['username'] . '</span></h2>
                       <div class="d-flex mt-4 justify-content-center align-items-center">
                     ';
                             
@@ -68,7 +72,7 @@
                 }  
 
               ?>
-              </div>
+        </div>
     </div>
 
     <?php include './partials/_loginModal.php'; ?>

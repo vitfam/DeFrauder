@@ -120,6 +120,10 @@ svg text {
     text-align: justify;
 }
 
+.story-box p{
+    font-size: 20px;
+}
+
 .story-box{
     height: 50%;
 }

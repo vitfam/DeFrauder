@@ -13,18 +13,12 @@
         $stage3 = $_GET['stage3'];
         $story = $_GET['story'];
 
-        $stage1 = str_replace("<", "&lt;", $stage1);
-        $stage1 = str_replace(">", "&gt;", $stage1);
         $stage1 = str_replace("'", "&apos;", $stage1);
         $stage1 = str_replace('"', '&quot;', $stage1);
         
-        $stage2 = str_replace("<", "&lt;", $stage2);
-        $stage2 = str_replace(">", "&gt;", $stage2);
         $stage2 = str_replace("'", "&apos;", $stage2);
         $stage2 = str_replace('"', '&quot;', $stage2);
         
-        $stage3 = str_replace("<", "&lt;", $stage3);
-        $stage3 = str_replace(">", "&gt;", $stage3);
         $stage3 = str_replace("'", "&apos;", $stage3);
         $stage3 = str_replace('"', '&quot;', $stage3);
         

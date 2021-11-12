@@ -13,18 +13,12 @@
         $final3 = $_GET['final3'];
         $story = $_GET['story'];
 
-        $final1 = str_replace("<", "&lt;", $final1);
-        $final1 = str_replace(">", "&gt;", $final1);
         $final1 = str_replace("'", "&apos;", $final1);
         $final1 = str_replace('"', '&quot;', $final1);
         
-        $final2 = str_replace("<", "&lt;", $final2);
-        $final2 = str_replace(">", "&gt;", $final2);
         $final2 = str_replace("'", "&apos;", $final2);
         $final2 = str_replace('"', '&quot;', $final2);
         
-        $final3 = str_replace("<", "&lt;", $final3);
-        $final3 = str_replace(">", "&gt;", $final3);
         $final3 = str_replace("'", "&apos;", $final3);
         $final3 = str_replace('"', '&quot;', $final3);
 

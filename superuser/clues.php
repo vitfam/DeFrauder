@@ -12,13 +12,9 @@
         $content = $_GET['content'];
         $story = $_GET['story'];
 
-        $title = str_replace("<", "&lt;", $title);
-        $title = str_replace(">", "&gt;", $title);
         $title = str_replace("'", "&apos;", $title);
         $title = str_replace('"', '&quot;', $title);
         
-        $content = str_replace("<", "&lt;", $content);
-        $content = str_replace(">", "&gt;", $content);
         $content = str_replace("'", "&apos;", $content);
         $content = str_replace('"', '&quot;', $content);
         
