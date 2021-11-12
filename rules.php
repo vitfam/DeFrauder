@@ -50,9 +50,9 @@
         <h1 class="text-center mb-3 text-uppercase">Guidelines</h1>
         <h4>General Instructions</h4>
         <ul>
-            <li>You have 15 minutes to go over the guidelines. Please take your time to read through all of the points.
+            <li>You have 15 minutes to go over the guidelines.
             </li>
-            <li>The game must be played on a single device with a reliable connection (ideally a PC).</li>
+            <li>The game must be played on a single device with a reliable connection (ideally a Laptop/Desktop).</li>
             <li>Network issues will NOT be entertained.</li>
             <li>The game can only be accessed and played by the team leader.</li>
             <li>You will NOT be allowed to login to the game again if you log out before the game's permitted time has
@@ -71,20 +71,20 @@
                 by substantial reasoning. The team that comes the closest to the truth and produces relevant evidence to
                 back it up will be declared the winner.</li>
             <li>The game will end for everyone at <span class="imp">04:00 PM</span> sharp.</li>
+            <li class="text-uppercase text-info fw-bold">In any and all situations, VITFAM's judgement is final and
+                binding.</li>
         </ul>
 
         <h4 class="mt-5">Disqualification</h4>
         <ul>
-            <li>Using any form of <span class="error">FOUL</span> language in the answers.</li>
-            <li>Using any unethical tactics during or before the game.</li>
+            <li>Using any form of <span class="error">profane</span> language in the answers.</li>
+            <li>Using any foul means during or before the game.</li>
         </ul>
 
         <h4 class="mt-5">Grading System</h4>
         <ul>
             <li>The keywords in your responses will determine the number of points you earn.</li>
             <li>Each bonus question is worth 5 points, while the Question Round questions are for 10 points each.</li>
-            <li class="text-uppercase text-info fw-bold">In any and all situations, VITFAM's judgement is final and
-                binding.</li>
         </ul>
 
         <p class="text-center mt-5 fs-5">Put on your thinking cap and start the investigation. We're confident that
@@ -93,7 +93,14 @@
 
     </div>
 
-    <?php require './partials/_footer.php'; ?>
+    <div class="container-fluid footer d-flex bg-light text-dark py-2 sticky-bottom mt-5">
+        <p class="text-center mb-0 py-4">Copyright © <script>
+            document.write(new Date().getFullYear())
+            </script> All Rights reserved by <a href="./index.php" style="text-decoration:none;">VITFAM</a></p>
+        <div class="foot-links d-flex">
+            <a href="./index.php" class="btn btn-outline-dark mx-1">Home</a>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">

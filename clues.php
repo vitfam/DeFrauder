@@ -111,7 +111,7 @@
                         if($id == 15){
                           if($clue_row['ques_increment'] == 4){
                             echo '
-                              <a href="./final.php" role="button" class="btn btn-success my-2 mx-2" style="color:#FFF !important;">Final Question</a>
+                              <a href="./final.php" role="button" class="btn btn-success my-2 mx-2" style="color:#FFF !important;">Question Round</a>
                             ';
                           }else{
                             echo '
@@ -279,7 +279,7 @@
             }
             if($clueListRow['ques_increment'] == 4){
               echo '
-                <a href="./final.php" role="submit" class="btn btn-success btn-sm mx-1 my-2" style="color:#FFF !important;">Final Question</a>
+                <a href="./final.php" role="submit" class="btn btn-success btn-sm mx-1 my-2" style="color:#FFF !important;">Question Round</a>
               ';
             }
           } else if($clueListRow['ques_increment'] == 3){

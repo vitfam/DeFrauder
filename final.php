@@ -47,7 +47,7 @@
         if($_SESSION['ques_increment'] == 4){
           echo '
           <div class="container story-box my-4">
-              <h2 class="text-center text-uppercase">Final Round</h2>
+              <h2 class="text-center text-uppercase">Question Round</h2>
           </div>
 
           <div class="container question-box my-5">
