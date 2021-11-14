@@ -33,7 +33,7 @@
   <body
     style="
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('https://wallpaperaccess.com/full/1104840.jpg');
+        url('https://wallpapercave.com/wp/wp2508415.jpg');
     "
   >
     <div id="loader">
@@ -66,7 +66,7 @@
               align-middle
             "
           >
-            <thead>
+            <thead class="text-center">
               <tr>
                 <th scope="col">S. No.</th>
                 <th scope="col">Participants Name</th>
@@ -75,34 +75,50 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
-                <td>
+                <th class="text-center" scope="row">1</th>
+                <td class="px-4">
                   Sree Viswanath <br />
                   Arjun K Swamy <br />
                   Himakshi Jammar <br />
                 </td>
-                <td>DEAD IN DAYLIGHT</td>
+                <td class="px-4">DEAD IN DAYLIGHT</td>
               </tr>
               <tr>
-                <th scope="row">2</th>
-                <td>
+                <th class="text-center" scope="row">2</th>
+                <td class="px-4">
                   Abhishek Kumar <br />
                   Ramireddy Jeevan Reddy <br />
                   Joshua Jose <br />
                 </td>
-                <td>MURDER ON THE RACE TRACK</td>
+                <td class="px-4">MURDER ON THE RACE TRACK</td>
               </tr>
               <tr>
-                <th scope="row">3</th>
-                <td>George Mathew</td>
-                <td>FAMILY TIES ?</td>
+                <th class="text-center" scope="row">3</th>
+                <td class="px-4">George Mathew</td>
+                <td class="px-4">FAMILY TIES ?</td>
               </tr>
-
-              <tr style="border: none;">
-                <td style="border: none; padding: 0;"></td>
-                <td style="border: none; padding: 0;"></td>
-                <td style="border: none; padding: 0;">
-                  <div class="my-4" style="margin: -9px; float: right;">
+            </tbody>
+            <tfoot>
+              <tr>
+                <th style="border: none" scope="col">Special Mention</th>
+                <th style="border: none"></th>
+                <th style="border: none"></th>
+              </tr>
+              <tr>
+                <th class="text-center" scope="row">1</th>
+                <td class="px-4">Anant Vedansh</td>
+                <td class="px-4">DEAD IN DAYLIGHT</td>
+              </tr>
+              <tr>
+                <th class="text-center" scope="row">2</th>
+                <td class="px-4">Yash Bhootda</td>
+                <td class="px-4">FAMILY TIES ?</td>
+              </tr>
+              <tr style="border: none">
+                <td style="border: none; padding: 0"></td>
+                <td style="border: none; padding: 0"></td>
+                <td style="border: none; padding: 0">
+                  <div class="my-4" style="margin: -9px; float: right">
                     <a
                       href="./index.php"
                       class="btn btn-warning text-dark mx-2 px-4"
@@ -111,9 +127,8 @@
                   </div>
                 </td>
               </tr>
-            </tbody>
+            </tfoot>
           </table>
-        
         </div>
       </div>
     </div>

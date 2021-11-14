@@ -70,9 +70,9 @@
                     //   </div>
                     // ';
                     echo '
+                    <h2 style="font-family: \'Cinzel Decorative\', cursive;">tHANK YOu fOR PARtiCiPAtiNG</h2>
                       <div class="d-flex mt-4 justify-content-center align-items-center">
-                        <a href="./winners.php" class="btn btn-primary mx-2">Feedback Form</a>
-                        <a href="./winners.php" class="btn btn-outline-light mx-2">Result</a>
+                        <a href="./winners.php" class="btn btn-outline-light mx-2">Check Result</a>
                         <a href="https://instagram.com/vitfam_/" target="_blank" class="btn btn-warning text-dark mx-2">Follow for more events</a>
                       </div>
                     ';
