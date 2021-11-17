@@ -1,4 +1,4 @@
-# Financial Fraud | VITFAM Event
+# DeFRAUDER | VITFAM Event
 VITFAM is hosting an event about financial fraud.<br>
 Where a player has provided credentials and a summary of the story and clues, they must next go through the clues that will be placed in various platforms on the internet. They must locate the clue and create a story based on the clue, and then, in order to pass the stage, they must provide some answers to the questions, and last, after completing the story, they must provide some ending to the assigned story. <br>
 The work is then done.
